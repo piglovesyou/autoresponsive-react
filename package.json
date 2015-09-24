@@ -19,7 +19,7 @@
     "url": "https://github.com/xudafeng/autoresponsive-react.git"
   },
   "scripts": {
-    "postinstall": "babel lib/ --out-dir build",
+    "prepublish": "babel lib/ --out-dir build",
     "lint": "make lint",
     "test": "make test",
     "build": "make build"
