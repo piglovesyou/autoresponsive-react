@@ -22,5 +22,5 @@ lint:
 server: install
 	@${npm_bin}/startserver
 build:
-	@${npm_bin}/babel lib/ --out-dir dist/
+	@${npm_bin}/babel lib/ --out-dir build/
 .PHONY: test

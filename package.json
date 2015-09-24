@@ -11,7 +11,7 @@
     "ui",
     "component"
   ],
-  "main": "index.js",
+  "main": "build/index.js",
   "homepage": "http://xudafeng.github.io/autoresponsive-react",
   "author": "xudafeng@126.com",
   "repository": {
@@ -19,19 +19,20 @@
     "url": "https://github.com/xudafeng/autoresponsive-react.git"
   },
   "scripts": {
+    "postinstall": "babel lib/ --out-dir build",
     "lint": "make lint",
     "test": "make test",
     "build": "make build"
   },
   "dependencies": {
-    "autoresponsive-common": "~1.0.0",
+    "babel": "~5.8.23",
+    "autoresponsive-common": "piglovesyou/autoresponsive-common#1.0.0-requirable",
     "exenv": "^1.2.0"
   },
   "precommit": [
     "lint"
   ],
   "devDependencies": {
-    "babel": "~5.8.23",
     "babel-core": "^5.x",
     "babel-loader": "^5.x",
     "eslint-plugin-react": "~2.5.2",
