@@ -24,7 +24,7 @@
     "build": "make build"
   },
   "dependencies": {
-    "autoresponsive-common": "piglovesyou/autoresponsive-common#1.0.0-requirable",
+    "autoresponsive-common": "piglovesyou/autoresponsive-common#1.0.0-requirable-containsbuilds",
     "exenv": "^1.2.0"
   },
   "precommit": [
